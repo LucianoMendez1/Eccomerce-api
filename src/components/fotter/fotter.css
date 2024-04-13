@@ -1,0 +1,64 @@
+.container-fotter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase !important;
+    background-color: #1b1b1b;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav h1,
+.envio h1,
+.mediosPago h1,
+.redes h1,
+.contacto h1 {
+    font-size: 1rem;
+    margin: 2px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 2px;
+}
+
+.mediosPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediosPago-images {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mediosPago img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.envio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.envio img{
+    
+    width: 70px;
+    margin: 10px;
+}

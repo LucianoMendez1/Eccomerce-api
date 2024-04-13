@@ -1,0 +1,48 @@
+.container-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .03);
+    color: #000; 
+    font-family: "roboto", Sans-serif;
+  }
+
+  .container-redes h1{
+    font-size: 1.5rem;
+  }
+  
+  .redes {
+    margin: 10px; /* Espacio entre los íconos */
+    display: flex;
+    align-items: center;
+    transition: transform 3s ease;
+    transform: scale(1.09);
+  }
+  
+  .redes a {
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    margin-right: 5px; 
+  }
+  
+  .redes:hover {
+ 
+    transition: transform 3s ease;
+    transform: scale(1.0); 
+  }
+  
+  .redes svg {
+    width: 20px; 
+    padding: 1rem;
+    height: auto; 
+    fill: #000; 
+  }
+  
+  .redes span {
+    font-size: 14px; 
+    color: #000; 
+  }
+  

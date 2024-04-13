@@ -1,0 +1,64 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+  }
+
+.productos-container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 10rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .producto-card {
+   background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+   
+  }
+  
+  .producto-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .producto-card h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: center;
+  }
+  
+  .producto-card p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+ 
+    justify-content: center;
+  }
+  
+
+  .button-seleccion{ 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    justify-content: center;
+  }

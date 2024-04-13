@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+
+.container-select {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenedor a columna */
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 1rem;
+}
+
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; 
+  height: auto;
+  overflow: hidden;
+  gap: 20px; /* Espacio entre las imágenes */
+  transition: transform 3s ease;
+}
+
+.container-img img:hover {
+  transition: transform 3s ease;
+  transform: scale(1.09); /* Escala la imagen al 110% cuando se pasa el mouse por encima */
+}
+
+.container-img img {
+  width: calc(50% - 10px);
+}
+
+.button-seleccion {
+  margin-top: 1rem; /* Añade margen arriba para separar el botón de las imágenes */
+}
+
+.button-seleccion button {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.button-seleccion button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000000;
+  transition: 0.5s ease;
+}
+
+.button-seleccion button:hover {
+  color: #ffffff;
+  transition-delay: 0.5s;
+}
+
+.button-seleccion button:hover::before {
+  width: 100%;
+}
+
+.button-seleccion button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #000000;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.button-seleccion button:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
